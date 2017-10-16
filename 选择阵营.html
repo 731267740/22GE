@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>阵营选择</title>
+	<link rel="stylesheet" href="css/select.css" />
+	</head> 
+	<body>
+		<div class="top">
+				<p class="topsel">请选择营寨</p>
+				<div class="topsel2"></div>
+				<p class="topsel1">成功加入后不能更改</p>
+		</div>
+		<div id="" class="mainbg">
+			<div class="">
+				<table border="0" cellpadding="0" cellspacing="0" id="table">
+					<tr>
+						
+						<td><img src="images/黑风寨2.jpg" class="tableph"></td>
+						<td class="tdname">黑风寨</td>
+						<td class="tdmembers">成员</td>
+						<td class="tdnum">(<span class="savemem">15</span>/20)</td>
+						<td c><input name="Fruit" type="radio" value="" style="width:50px;height:50px;margin-right: 10px;" /></td>
+					</tr>
+					<tr>
+						<td ><img src="images/仙灵岛水月宫2.jpg" class="tableph"></td>
+						<td class="tdname">水月宫</td>
+						<td class="tdmembers">成员</td>
+						<td class="tdnum">(<span class="savemem">1</span>/20)</td>
+						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+					</tr>
+					<tr>
+						<td><img src="images/杭州缥缈峰2.jpg" class="tableph"></td>
+						<td class="tdname">缥缈峰</td>
+						<td class="tdmembers">成员</td>
+						<td class="tdnum">(<span class="savemem">12</span>/20)</td>
+						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+					</tr>
+					<tr>
+						<td><img src="images/折剑山庄2.jpg" class="tableph"></td>
+						<td class="tdname">折剑庄</td>
+						<td class="tdmembers">成员</td>
+						<td class="tdnum">(<span class="savemem">2</span>/20)</td>
+						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+					</tr>
+					<tr>
+						<td><img src="images/峨眉仙霞派2.jpg" class="tableph"></td>
+						<td class="tdname">仙霞派</td>
+						<td class="tdmembers">成员</td>
+						<td class="tdnum">(<span class="savemem">10</span>/20)</td>
+						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+					</tr>
+				</table>
+			</div>
+		<div class="sure">
+			<input class="saveas" type="button" name="" id="" value=""/>
+		</div>
+		</div>
+		
+	</body>
+		 <script type="text/javascript">
+          window.onload=function() {  
+                 var tbl = document.getElementById("table"); // 先获取table
+                var rows = tbl.getElementsByTagName("tr"); // 获取里面的行tr
+               for(i=0;i<rows.length;i++) {  // 遍历里面的行
+                       var j = parseInt(i/1); // 以每1行为单位,j为次; 
+                       if(j%2==0){ // 再通过取模来设置每隔1行显示不同的两种颜色
+                         rows[i].style.backgroundColor="#09203f";
+                       }else{
+                         rows[i].style.backgroundColor="#2b5876";
+                      } 
+              }  
+       };  
+      </script> 
+</html>
