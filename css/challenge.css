@@ -1,0 +1,269 @@
+.tdname{
+	padding: 45px;
+	font-size: 37px;
+	font-weight: bolder;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tdmembers{
+	padding: 45px;
+	font-size: 25px;
+	font-weight: bolder;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tdnum{
+	padding: 50px;
+	font-size: 25px;
+	font-weight: bolder;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tableph{
+    border: 25px solid;
+	border-image:url(../images/框框边边.png) 80 70 stretch;
+}
+.savemem{
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#b1{
+	background: #1B1F28;
+}
+.kktext{
+	font-size: 38px;
+	font-weight: bolder;
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 8px;
+	position: absolute;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s72{
+	font-size:90px;
+	font-weight:bolder;
+	margin-left: 50px;
+	position:absolute;
+	margin-top: 25px;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swin{
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	margin-left: 100px;
+	margin-top: 40px;
+	position: absolute;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s125{
+	font-size:90px;
+	font-weight:bolder;
+	margin-left: 50px;
+	position:absolute;
+	margin-top: 100px;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slos{
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	margin-left: 230px;
+	margin-top: 40px;
+	position: absolute;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s66{
+	font-size:90px;
+	font-weight:bolder;
+	margin-left: 200px;
+	position:absolute;
+	margin-top: 100px;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.langya{
+	height: 330px;
+	width: 300px;
+	margin:20px 40px;
+	position:absolute;
+	background: url(../images/狼牙榜.png)no-repeat;
+}
+.win{
+	height: 80%;
+	width: 100%;
+	text-align: center;
+	position:inherit;
+	font-size:90px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.los{
+	height: 650px;
+	height: 280px;
+	margin-left: 300px;
+	position:absolute;
+	font-size:90px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.winorlos{
+	text-align: center;
+	margin-left: 300px;
+	position:absolute;
+	margin-top: 10px;
+	width:68%;
+	height:300px;
+	font-size:90px;
+	background:#1B1F28;
+}
+.svs{
+	margin: 120px 330px;
+ 	position:initial;
+}
+.style-two {
+    border: 0;
+    width: 600px;
+    height: 1px;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: absolute;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.swinnum{
+	width: 400px;
+	font-size:30px;
+	font-weight:bolder;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swinnum1{
+	height: 40px;
+	width: 250px;
+	font-size:30px;
+	font-weight:bolder;
+	position:absolute;
+	margin-top: 205px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swinnum2{
+	font-size:40px;
+	font-weight:bolder;
+	position:absolute;
+	margin-left: 360px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swinnum3{
+	font-size:37px;
+	font-weight:bolder;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.zbshu{
+	margin-top: 310px;
+	margin-left: 5%;
+	position: absolute;
+}
+.lybottom{
+	font-size:33px;
+	width:85%;
+	margin-top: 330px;
+	margin-left: 13%;
+	position:absolute;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*第二段CSS框架代码*/
+.toptext1{
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	position: absolute;
+	margin-left: 30px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second-img{
+	position:absolute;
+}
+.second-text{
+	position:relative;
+	margin-left:50%;
+}
+.style-there{
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.style-four{
+    border: 0;
+    width: 70%;
+    position: absolute;
+	border: 5px;
+    height: 1px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.hanxin{
+	font-size:90px;
+	font-weight:bolder;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.stton{
+	margin-top: 50px;
+}
+.second-textdata{
+	font-size:33px;
+	font-weight:bolder;
+	margin: 18px 5px;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s12000{
+	background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s12or36{
+	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.schallenge{
+	margin: 2% 17%;
+	font-size:45px;
+	position:absolute;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}

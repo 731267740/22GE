@@ -70,6 +70,23 @@ table{
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.kktext{
+	font-size: 42px;
+	font-weight: bolder;
+	text-align: center;
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.kksmalltext{
+	font-size: 26px;
+	font-weight: bolder;
+	text-align: center;
+	background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 .tdnum{
 	padding: 50px;
 	font-size: 25px;
@@ -84,6 +101,25 @@ table{
 	margin-left: 400px;
 	background: url(../images/确定加入.png)no-repeat;
 }
+.bsure{
+	margin-left: 120px;
+	height: 80px;
+	background: url(../images/蓝色确认.png)no-repeat;
+}
+.reelect{
+	margin-right: 120px;
+	float: right;
+	width: 180px;
+	height: 80px;
+	background: url(../images/金色重选.png)no-repeat;
+}
+.hidden{
+	font-weight: bolder;
+	height: 80px;
+	width: 180px;
+	background: transparent;
+	border: 0;
+}
 .saveas{
 	width: 200px;
 	margin: 28px;
@@ -96,6 +132,42 @@ table{
 	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#test {
+	width:1000px;
+	height:1280px;
+	background-color:#000;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	opacity:0.3;
+	/*兼容IE8及以下版本浏览器*/
+	filter: alpha(opacity=30);
+	display:none;
+	}
+#log_window {
+	width:650px;
+	height:600px;
+	margin: auto;
+	background-color:#000;
+	position: absolute;
+	z-index:3;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display:none;
+}
+#div1 {
+	height: 600px;
+	width: 650px;
+	border-style: ridge;
+	border-color: #537895;
+	border-radius: 7px;
+	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+	display: none;
 }
 
 

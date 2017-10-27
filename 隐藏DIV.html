@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/select.css" />
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#hide").click(function() {
+				$("#div1").hide();
+			});
+			$("#show").click(function() {
+				$("#div1").show();
+			});
+		});
+		
+		function shield(){
+		    var s = document.getElementById("test");
+		    s.style.display = "block";
+		    
+		    var l = document.getElementById("log_window");
+		    l.style.display = "block";
+		}
+		
+		function cancel_shield(){
+		    var s = document.getElementById("test");
+		    s.style.display = "none";
+		    
+		    var l = document.getElementById("log_window");
+		    l.style.display = "none";
+		}
+	</script>
+
+	<body>
+		<div id="test"></div>
+		<div id="log_window">
+		    <div id="div1" class="div1">
+		    	<div>
+		    		<img src="images/杭州缥缈峰3.jpg">
+		    		<p class="kktext">确认加入<span class="savemem">缥缈峰</span>？</p>
+		    		<p class="kksmalltext">加入成功不能修改</p>
+		    	</div>
+		    	<div class="bsure">
+		    		<input class="hidden" type="button" name="" id="" value=""/>
+		    	<div class="reelect">
+		    		<a href="javascript:cancel_shield()"><input class="hidden" type="button" name="" id="" value=""/></a>
+		    	</div>
+		    	</div>
+		    </div>
+	    </div>
+	    <a href="javascript:shield()"><input type="button" name="" id="show" value="登录" /></a>
+	    <input type="button" name="" id="hide" value="取消" />
+	</body>
+</html>

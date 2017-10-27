@@ -5,71 +5,135 @@
 		<title>阵营选择</title>
 	<link rel="stylesheet" href="css/select.css" />
 	</head> 
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/react.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/babel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#hide").click(function() {
+				$("#div1").hide();
+			});
+			$("#show").click(function() {
+				$("#div1").show();
+			});
+		});
+		function shield(){
+		    var s = document.getElementById("test");
+		    s.style.display = "block";
+		    var l = document.getElementById("log_window");
+		    l.style.display = "block";
+		}
+		function cancel_shield(){
+		    var s = document.getElementById("test");
+		    s.style.display = "none";
+		    var l = document.getElementById("log_window");
+		    l.style.display = "none";
+		}
+	</script>
 	<body>
 		<div class="top">
 				<p class="topsel">请选择营寨</p>
 				<div class="topsel2"></div>
 				<p class="topsel1">成功加入后不能更改</p>
 		</div>
-		<div id="" class="mainbg">
+		<div id="lit" class="mainbg">
 			<div class="">
 				<table border="0" cellpadding="0" cellspacing="0" id="table">
 					<tr>
-						
 						<td><img src="images/黑风寨2.jpg" class="tableph"></td>
-						<td class="tdname">黑风寨</td>
+						<td class="tdname" >黑风寨</td>
 						<td class="tdmembers">成员</td>
 						<td class="tdnum">(<span class="savemem">15</span>/20)</td>
-						<td c><input name="Fruit" type="radio" value="" style="width:50px;height:50px;margin-right: 10px;" /></td>
+						<td c><input name="Fruit" type="radio" value="黑风寨" style="width:50px;height:50px;margin-right: 10px;" src="images/黑风寨3.jpg" /></td>
 					</tr>
 					<tr>
 						<td ><img src="images/仙灵岛水月宫2.jpg" class="tableph"></td>
 						<td class="tdname">水月宫</td>
 						<td class="tdmembers">成员</td>
 						<td class="tdnum">(<span class="savemem">1</span>/20)</td>
-						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+						<td><input name="Fruit" type="radio" value="水月宫" style="width:50px;height:50px" src="images/仙灵岛水月宫3.jpg" /></td>
 					</tr>
 					<tr>
 						<td><img src="images/杭州缥缈峰2.jpg" class="tableph"></td>
 						<td class="tdname">缥缈峰</td>
 						<td class="tdmembers">成员</td>
 						<td class="tdnum">(<span class="savemem">12</span>/20)</td>
-						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+						<td><input name="Fruit" type="radio" value="缥缈峰" style="width:50px;height:50px" src="images/杭州缥缈峰3.jpg" /></td>
 					</tr>
 					<tr>
 						<td><img src="images/折剑山庄2.jpg" class="tableph"></td>
 						<td class="tdname">折剑庄</td>
 						<td class="tdmembers">成员</td>
 						<td class="tdnum">(<span class="savemem">2</span>/20)</td>
-						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+						<td><input name="Fruit" type="radio" value="折剑庄" style="width:50px;height:50px" src="images/折剑山庄3.jpg" /></td>
 					</tr>
 					<tr>
 						<td><img src="images/峨眉仙霞派2.jpg" class="tableph"></td>
 						<td class="tdname">仙霞派</td>
 						<td class="tdmembers">成员</td>
 						<td class="tdnum">(<span class="savemem">10</span>/20)</td>
-						<td><input name="Fruit" type="radio" value="" style="width:50px;height:50px" /></td>
+						<td><input name="Fruit" type="radio" value="仙霞派" style="width:50px;height:50px" src="images/峨眉仙霞派3.jpg" /></td>
 					</tr>
 				</table>
 			</div>
-		<div class="sure">
-			<input class="saveas" type="button" name="" id="" value=""/>
+			<div class="sure">
+				<a href="javascript:shield()"><input class="saveas" type="button" name="Fruit" id="show" value="" @click="show"/></a>
+			</div>
 		</div>
-		</div>
+		
+		<!--登录遮罩显示-->
+		<div id="test"></div>
+		<div id="log_window">
+		    <div id="div1" class="div1">
+		    	<div>
+		    		<img id="imgg">
+		    		<p class="kktext">确认加入<span id="sptext" class="savemem"></span>？</p>
+		    		<p class="kksmalltext">加入成功不能修改</p>
+		    	</div>
+		    	<div class="bsure">
+		    		<a href="发起挑战.html"><input class="hidden" type="button" name="" id="" value=""/></a>
+		    	<div class="reelect">
+		    		<a href="javascript:cancel_shield()"><input class="hidden" type="button" name="" id="hide" value=""/></a>
+		    	</div>
+		    	</div>
+		    </div>
+	    </div>
 		
 	</body>
 		 <script type="text/javascript">
           window.onload=function() {  
-                 var tbl = document.getElementById("table"); // 先获取table
-                var rows = tbl.getElementsByTagName("tr"); // 获取里面的行tr
-               for(i=0;i<rows.length;i++) {  // 遍历里面的行
-                       var j = parseInt(i/1); // 以每1行为单位,j为次; 
-                       if(j%2==0){ // 再通过取模来设置每隔1行显示不同的两种颜色
-                         rows[i].style.backgroundColor="#09203f";
-                       }else{
-                         rows[i].style.backgroundColor="#2b5876";
-                      } 
-              }  
+            var tbl = document.getElementById("table"); // 先获取table
+            var rows = tbl.getElementsByTagName("tr"); // 获取里面的行tr
+            for(i=0;i<rows.length;i++) {  
+            	// 遍历里面的行
+                var j = parseInt(i/1); // 以每1行为单位,j为次; 
+                if(j%2==0){ 
+                	// 再通过取模来设置每隔1行显示不同的两种颜色
+                    rows[i].style.backgroundColor="#09203f";
+                }else{
+                    rows[i].style.backgroundColor="#2b5876";
+                } 
+              }
+           	var vm = new Vue({
+			el: '#lit',
+			data: {
+				
+			},
+			methods: {
+				show: function(text) {
+					var obj = document.getElementsByName("Fruit");
+					for (var i = 0; i < obj.length; i++) {
+						if (obj[i].checked) {
+							document.getElementById("sptext").innerText = obj[i].value;
+							document.getElementById("imgg").src = obj[i].src;
+							}
+						}
+				}
+		
+			}
+		});
        };  
+ 
       </script> 
 </html>
